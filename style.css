@@ -49,10 +49,12 @@ body {
   align-items: center;
   min-height: 80vh;
   padding: 0 80px;
+ flex-wrap: wrap;  
 }
 
 .hero-left {
   flex: 1;
+   min-width: 300px;
 }
 
 .hero-card {
@@ -88,9 +90,11 @@ body {
 }
 
 .hero-img {
-  width: 380px;
+  width: 100%;
+  max-width: 450px; /* set limit so it doesn't overflow */
   height: auto;
-  filter: drop-shadow(0 0 20px rgba(80,183,255,0.5));
+  border-radius: 12px;
+  object-fit: cover;
 }
 
 /* =========================
